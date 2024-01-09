@@ -68,7 +68,7 @@
             <section>
                 <div class="container mt-4 text-center">
                     <h1>What others are saying</h1>
-                    <div class="row" >
+                    <div class="row">
                         <div class="col-md-4" th:each="book : ${books}">
                             <div class="card mb-3">
                                 <img th:src="${book.imgUrl}" class="img-thumbnail" alt="">
@@ -88,8 +88,46 @@
                 </div>
             </section>
 
+
         </div>
     </div>
+    <section class="bg-dark text-white container-fluid">
+        <div class="container text-center p-5">
+            <h3>Join Our New Buyers For Deals And Update And Offers</h3>
+            <div class="row justify-content-center">
+                <div class="col-10 col-md-6 col-sm-8 col-lg-4">
+                    <form action="#">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control">
+                            <span class="btn btn-success input-group-text ">Search</span>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="footer" class="bg-secondary p-4 text-white">
+        <ul class="nav text-center justify-content-center flex-column flex-sm-row ">
+            <li class="nav-item">
+                <a href="#" class="nav-link text-white">FAQ</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-white">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-white">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-white">BookNow</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-white">Explore</a>
+            </li>
+
+        </ul>
+
+    </section>
 </main>
 </body>
 </html>
