@@ -23,6 +23,7 @@ public class Book {
    private String description;
    private double price;
    private int stock;
+   private String imgUrl;
    @ManyToOne
    private Author author;
 
@@ -45,12 +46,13 @@ public class Book {
        genres.add(genre);
    }
 
-    public Book(int id, String isbn, String title, String description, double price, int stock) {
+    public Book(int id, String isbn, String title, String description, double price, int stock,String imgUrl) {
         this.id = id;
         this.isbn = isbn;
         this.title = title;
         this.description = description;
         this.price = price;
         this.stock = stock;
+        this.imgUrl = imgUrl;
     }
 }
