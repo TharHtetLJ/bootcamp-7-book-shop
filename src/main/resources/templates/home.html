@@ -13,11 +13,12 @@
                             <img th:src="${books.get(0).imgUrl}" class="card-img-top" alt="">
                             <div class="card-body text-center">
                                 <h5 class="card-title" th:text="${books.get(0).title}"></h5>
-                                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim,
-                                    eveniet.</p>
-
-                                <button class="btn btn-lg btn-outline-primary  px-3 rounded">Details
-                                </button>
+                                <p class="lead">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim,
+                                    eveniet.
+                                </p>
+                                <a th:href="@{/book/list-books}" class="btn btn-lg btn-outline-primary  px-3 rounded">Details
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -26,11 +27,12 @@
                             <img th:src="${books.get(5).imgUrl}" class="card-img-top" alt="">
                             <div class="card-body text-center">
                                 <h5 class="card-title" th:text="${books.get(5).title}"></h5>
-                                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim,
-                                    eveniet.</p>
-
-                                <button class="btn btn-lg btn-outline-primary  px-3 rounded">Details
-                                </button>
+                                <p class="lead">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim,
+                                    eveniet.
+                                </p>
+                                <a th:href="@{/book/book-lists}" class="btn btn-lg btn-outline-primary  px-3 rounded">Details
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -65,6 +67,7 @@
                     </div>
                 </div>
             </section>
+
             <section>
                 <div class="container mt-4 text-center">
                     <h1>What others are saying</h1>
@@ -73,12 +76,11 @@
                             <div class="card mb-3">
                                 <img th:src="${book.imgUrl}" class="img-thumbnail" alt="">
                             </div>
-
-
                         </div>
                     </div>
                 </div>
             </section>
+
             <section>
                 <div class="container text-center mt-4">
                     <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
@@ -87,47 +89,10 @@
                     </blockquote>
                 </div>
             </section>
-
-
         </div>
     </div>
-    <section class="bg-dark text-white container-fluid">
-        <div class="container text-center p-5">
-            <h3>Join Our New Buyers For Deals And Update And Offers</h3>
-            <div class="row justify-content-center">
-                <div class="col-10 col-md-6 col-sm-8 col-lg-4">
-                    <form action="#">
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control">
-                            <span class="btn btn-success input-group-text ">Search</span>
-                        </div>
-                    </form>
-                </div>
 
-            </div>
-        </div>
-    </section>
-    <section id="footer" class="bg-secondary p-4 text-white">
-        <ul class="nav text-center justify-content-center flex-column flex-sm-row ">
-            <li class="nav-item">
-                <a href="#" class="nav-link text-white">FAQ</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link text-white">Experience</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link text-white">Contact</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link text-white">BookNow</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link text-white">Explore</a>
-            </li>
 
-        </ul>
-
-    </section>
 </main>
 </body>
 </html>

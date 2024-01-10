@@ -88,7 +88,7 @@ public class BookShopApplication {
                     "Excellent",
                     50.3,
                     20,
-                    "https://source.unsplash.com/366x200/?flower"
+                    "https://source.unsplash.com/366x200/?tree"
 
             );
             Book book6 = new Book(
@@ -98,7 +98,7 @@ public class BookShopApplication {
                     "Excellent",
                     50.3,
                     20,
-                    "https://source.unsplash.com/366x200/?flower"
+                    "https://source.unsplash.com/366x200/?mountain"
 
             );
             //mapping
