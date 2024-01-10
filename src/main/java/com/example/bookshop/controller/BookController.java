@@ -29,7 +29,7 @@ public class BookController {
     }
 
 
-    //book/book-details?id=1&
+    //book/book-details?id=1&isbn=ISBN-8890
     @GetMapping("/book-details")
     public String bookDetails(@RequestParam("id")Integer id,
                               @RequestParam("isbn") String isbn, Model model){
